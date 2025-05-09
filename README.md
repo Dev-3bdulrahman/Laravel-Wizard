@@ -2,11 +2,11 @@
 
 <div align="center">
 
-![Laravel Wizard](./images/logo.svg)
+![Laravel Wizard](./images/logo.png)
 
 **The Ultimate VS Code Extension for Laravel Development**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=Dev-3bdulrahman.Laravel-Wizard)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=Dev-3bdulrahman.Laravel-Wizard)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Laravel](https://img.shields.io/badge/Laravel-8.x|9.x|10.x|11.x-red.svg)](https://laravel.com)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.80.0+-blueviolet.svg)](https://code.visualstudio.com)
@@ -116,7 +116,7 @@ Press `Ctrl+Shift+P` and type "Laravel" to see all available commands.
   </tr>
   <tr>
     <td><strong>Version</strong></td>
-    <td>1.0.0</td>
+    <td>1.0.1</td>
   </tr>
   <tr>
     <td><strong>License</strong></td>
@@ -129,6 +129,11 @@ Press `Ctrl+Shift+P` and type "Laravel" to see all available commands.
 </table>
 
 ## 🚀 Release Notes
+
+### 1.0.1 (May 2025)
+- Fixed compatibility issues with VS Code Marketplace
+- Updated documentation and images
+- Minor bug fixes and improvements
 
 ### 1.0.0 (May 2025)
 

@@ -2,7 +2,7 @@
   "name": "Laravel-Wizard",
   "displayName": "Laravel Wizard",
   "description": "The ultimate VS Code extension for Laravel development with intelligent code assistance, snippets, and powerful tools to supercharge your PHP workflow.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.80.0"
   },
