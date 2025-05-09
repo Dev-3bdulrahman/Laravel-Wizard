@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Laravel Wizard](../images/logo.png)
+![Laravel Wizard](../images/logo.svg)
 
 **The Ultimate VS Code Extension for Laravel Development**
 
