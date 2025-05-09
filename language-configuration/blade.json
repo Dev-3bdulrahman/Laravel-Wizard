@@ -1,0 +1,39 @@
+{
+  "comments": {
+    "lineComment": "{{-- ",
+    "blockComment": ["{{--", "--}}"]
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["{{", "}}"],
+    ["{!!", "!!}"],
+    ["@if(", ")"],
+    ["@foreach(", ")"],
+    ["@section(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"", "notIn": ["string"] },
+    { "open": "'", "close": "'", "notIn": ["string"] },
+    { "open": "{{", "close": "}}" },
+    { "open": "{!!", "close": "!!}" },
+    { "open": "{{--", "close": "--}}" }
+  ],
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\"", "\""],
+    ["'", "'"],
+    ["{{", "}}"],
+    ["{!!", "!!}"]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "(@(if|elseif|else|foreach|forelse|for|while|section|push|slot|component|php|unless|auth|guest|switch|case|default|extends|include|once|prepend|append|yield|hasSection|can|cannot|canany|inject|env|empty|isset|unset|verbatim|production|props|aware|js|class|checked|selected|disabled|readonly|required)\\b.*$)|(<(head|body|div|p|section|article|aside|nav|header|footer|form|table|tr|td|th|ul|ol|li|dl|dt|dd)\\b[^>]*>)",
+    "decreaseIndentPattern": "(@(end\\w+|show|stop|overwrite|else|elseif|case|default|break|continue|empty|endif|endforeach|endforelse|endfor|endwhile|endswitch|endcomponent|endslot|endphp|endunless|endauth|endguest|endcan|endcannot|endcanany|endinject|endenv|endisset|endunset|endverbatim|endproduction|endprops|endaware|endjs|endclass|endchecked|endselected|enddisabled|endreadonly|endrequired)\\b.*$)|(</(head|body|div|p|section|article|aside|nav|header|footer|form|table|tr|td|th|ul|ol|li|dl|dt|dd)\\b[^>]*>)"
+  }
+}

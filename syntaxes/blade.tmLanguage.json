@@ -1,0 +1,146 @@
+{
+  "name": "Laravel Blade",
+  "scopeName": "text.html.php.blade",
+  "fileTypes": ["blade.php"],
+  "patterns": [
+    {
+      "include": "#blade-directives"
+    },
+    {
+      "include": "#blade-comments"
+    },
+    {
+      "include": "#blade-echo"
+    },
+    {
+      "include": "text.html.basic"
+    },
+    {
+      "include": "source.php"
+    }
+  ],
+  "repository": {
+    "blade-directives": {
+      "patterns": [
+        {
+          "name": "meta.directive.blade",
+          "match": "(@)(if|elseif|foreach|forelse|for|while|continue|break|switch|case|default|extends|include|includeIf|includeWhen|includeFirst|each|yield|section|push|stack|once|hasSection|sectionMissing|prepend|append|aware|class|checked|selected|disabled|readonly|required)(\\s*\\(.*\\))?",
+          "captures": {
+            "1": {
+              "name": "keyword.blade"
+            },
+            "2": {
+              "name": "keyword.control.blade"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "source.php"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "meta.directive.blade",
+          "match": "(@)(endif|endforeach|endforelse|endfor|endwhile|endswitch|endcomponent|endsection|endpush|endstack|endonce|endprepend|endappend|endaware|endclass|endchecked|endselected|enddisabled|endreadonly|endrequired|show|stop|overwrite|parent|method|csrf|error|props|json|dd|php|auth|guest|production|env|empty|isset|unset|verbatim)",
+          "captures": {
+            "1": {
+              "name": "keyword.blade"
+            },
+            "2": {
+              "name": "keyword.control.blade"
+            }
+          }
+        },
+        {
+          "name": "meta.directive.blade",
+          "match": "(@)(component|slot)(\\s*\\(.*\\))?",
+          "captures": {
+            "1": {
+              "name": "keyword.blade"
+            },
+            "2": {
+              "name": "keyword.control.component.blade"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "source.php"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "meta.directive.livewire.blade",
+          "match": "(@)(livewire)(\\s*\\(.*\\))?",
+          "captures": {
+            "1": {
+              "name": "keyword.blade"
+            },
+            "2": {
+              "name": "keyword.control.livewire.blade"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "source.php"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "meta.directive.filament.blade",
+          "match": "(@)(filament)(\\s*\\(.*\\))?",
+          "captures": {
+            "1": {
+              "name": "keyword.blade"
+            },
+            "2": {
+              "name": "keyword.control.filament.blade"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "source.php"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "blade-comments": {
+      "name": "comment.block.blade",
+      "begin": "\\{\\{--",
+      "end": "--\\}\\}",
+      "patterns": []
+    },
+    "blade-echo": {
+      "patterns": [
+        {
+          "name": "meta.echo.blade",
+          "begin": "\\{\\{",
+          "end": "\\}\\}",
+          "patterns": [
+            {
+              "include": "source.php"
+            }
+          ]
+        },
+        {
+          "name": "meta.echo.unescaped.blade",
+          "begin": "\\{!!",
+          "end": "!!\\}",
+          "patterns": [
+            {
+              "include": "source.php"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

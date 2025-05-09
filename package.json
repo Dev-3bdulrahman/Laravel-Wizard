@@ -1,0 +1,176 @@
+{
+  "name": "Laravel-Wizard",
+  "displayName": "Laravel Wizard",
+  "description": "The ultimate VS Code extension for Laravel development with intelligent code assistance, snippets, and powerful tools to supercharge your PHP workflow.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Linters",
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "laravel",
+    "php",
+    "blade",
+    "livewire",
+    "filament",
+    "artisan",
+    "composer"
+  ],
+  "publisher": "Dev-3bdulrahman",
+  "author": {
+    "name": "Abdulrahman Mehesan",
+    "email": "contact@3bdulrahman.com",
+    "url": "https://3bdulrahman.com/"
+  },
+  "sponsor": {
+    "url": "https://3bdulrahman.com/sponsor"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-3bdulrahman/Laravel-Wizard"
+  },
+  "homepage": "https://github.com/Dev-3bdulrahman/Laravel-Wizard",
+  "bugs": {
+    "url": "https://github.com/Dev-3bdulrahman/Laravel-Wizard/issues"
+  },
+  "activationEvents": [
+    "onLanguage:php",
+    "onLanguage:blade",
+    "workspaceContains:artisan",
+    "workspaceContains:composer.json"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "laravelWizard.refreshIntelliSense",
+        "title": "Laravel Wizard: Refresh IntelliSense"
+      },
+      {
+        "command": "laravelWizard.artisanCommand",
+        "title": "Laravel Wizard: Run Artisan Command"
+      },
+      {
+        "command": "laravelWizard.goToRoute",
+        "title": "Laravel Wizard: Go to Route"
+      },
+      {
+        "command": "laravelWizard.goToModel",
+        "title": "Laravel Wizard: Go to Model"
+      },
+      {
+        "command": "laravelWizard.goToController",
+        "title": "Laravel Wizard: Go to Controller"
+      },
+      {
+        "command": "laravelWizard.goToView",
+        "title": "Laravel Wizard: Go to View"
+      },
+      {
+        "command": "laravelWizard.goToMigration",
+        "title": "Laravel Wizard: Go to Migration"
+      }
+    ],
+    "configuration": {
+      "title": "Laravel Wizard",
+      "properties": {
+        "laravelWizard.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable Laravel Wizard extension"
+        },
+        "laravelWizard.artisanPath": {
+          "type": "string",
+          "default": "php artisan",
+          "description": "Custom path to the Artisan executable"
+        },
+        "laravelWizard.composerPath": {
+          "type": "string",
+          "default": "composer",
+          "description": "Custom path to the Composer executable"
+        },
+        "laravelWizard.bladeFormatting.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable Blade template formatting"
+        },
+        "laravelWizard.snippets.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable snippets"
+        },
+        "laravelWizard.intelephense.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable PHP IntelliSense integration"
+        },
+        "laravelWizard.livewireSupport.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable Livewire support"
+        },
+        "laravelWizard.filamentSupport.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable Filament support"
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "blade",
+        "aliases": ["Blade", "blade"],
+        "extensions": [".blade.php"],
+        "configuration": "./language-configuration/blade.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "blade",
+        "scopeName": "text.html.php.blade",
+        "path": "./syntaxes/blade.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/php.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/blade.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "glob": "^11.0.2",
+    "minimatch": "^10.0.1",
+    "php-parser": "^3.2.3",
+    "typescript": "^5.8.3",
+    "vscode-languageclient": "^9.0.1",
+    "vscode-languageserver-types": "^3.17.5"
+  }
+}

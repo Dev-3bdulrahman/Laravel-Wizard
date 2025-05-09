@@ -1,0 +1,2 @@
+Laravel Wizard
+The ultimate VS Code extension for Laravel development
