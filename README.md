@@ -6,12 +6,12 @@
 
 **The Ultimate VS Code Extension for Laravel Development**
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=Dev-3bdulrahman.Laravel-Wizard)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://marketplace.visualstudio.com/items?itemName=Dev-3bdulrahman.Laravel-Wizard)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Laravel](https://img.shields.io/badge/Laravel-8.x|9.x|10.x|11.x-red.svg)](https://laravel.com)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.80.0+-blueviolet.svg)](https://code.visualstudio.com)
 
-[Features](#features) • [Installation](#installation) • [Documentation](#usage) • [GitHub](https://github.com/Dev-3bdulrahman/Laravel-Wizard)
+[Features](#features) • [Installation](#installation) • [Documentation](https://dev-3bdulrahman.github.io/Laravel-Wizard-Documentation/) • [GitHub](https://github.com/Dev-3bdulrahman/Laravel-Wizard)
 
 </div>
 
@@ -78,6 +78,8 @@ This extension contributes the following settings:
 
 ## Usage
 
+For detailed documentation and usage instructions, please visit our [official documentation website](https://dev-3bdulrahman.github.io/Laravel-Wizard-Documentation/).
+
 ### IntelliSense
 
 Laravel Wizard automatically provides intelligent code completion as you type. It works with:
@@ -88,6 +90,17 @@ Laravel Wizard automatically provides intelligent code completion as you type. I
 - Models and relationships
 - Artisan commands
 - Configuration values
+
+### Go to Definition
+
+Press `Ctrl+Click` on any Laravel element to navigate to its definition:
+
+- Models and their properties
+- Controllers and their methods
+- Blade views and components
+- Routes and their handlers
+- Livewire components
+- And more!
 
 ### Snippets
 
@@ -107,6 +120,8 @@ Type the prefix and press Tab to insert the snippet:
 
 Press `Ctrl+Shift+P` and type "Laravel" to see all available commands.
 
+For more detailed instructions and examples, check out our [comprehensive documentation](https://dev-3bdulrahman.github.io/Laravel-Wizard-Documentation/).
+
 ## 📋 Technical Details
 
 <table>
@@ -116,7 +131,7 @@ Press `Ctrl+Shift+P` and type "Laravel" to see all available commands.
   </tr>
   <tr>
     <td><strong>Version</strong></td>
-    <td>1.0.1</td>
+    <td>1.0.2</td>
   </tr>
   <tr>
     <td><strong>License</strong></td>
@@ -129,6 +144,12 @@ Press `Ctrl+Shift+P` and type "Laravel" to see all available commands.
 </table>
 
 ## 🚀 Release Notes
+
+### 1.0.2 (May 2025)
+- Enhanced Go to Definition functionality for all Laravel elements
+- Added comprehensive documentation link
+- Improved code navigation for Blade views, models, and controllers
+- Fixed VS Code Marketplace compatibility issues
 
 ### 1.0.1 (May 2025)
 - Fixed compatibility issues with VS Code Marketplace

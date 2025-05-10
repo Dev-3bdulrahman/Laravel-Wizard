@@ -2,7 +2,7 @@
   "name": "Laravel-Wizard",
   "displayName": "Laravel Wizard",
   "description": "The ultimate VS Code extension for Laravel development with intelligent code assistance, snippets, and powerful tools to supercharge your PHP workflow.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -36,7 +36,7 @@
     "type": "git",
     "url": "https://github.com/Dev-3bdulrahman/Laravel-Wizard"
   },
-  "homepage": "https://github.com/Dev-3bdulrahman/Laravel-Wizard",
+  "homepage": "https://dev-3bdulrahman.github.io/Laravel-Wizard-Documentation/",
   "bugs": {
     "url": "https://github.com/Dev-3bdulrahman/Laravel-Wizard/issues"
   },
